@@ -38,8 +38,11 @@ udpPort.on("ready", function () {
         console.log(" Host:", address + ", Port:", udpPort.options.localPort);
     });
 
-    // Make the screen blank
-    cmd.run('/opt/vc/bin/tvservice -p');
+    console.log('launching player in 10 seconds...')
+    setTimeout(() => {
+        // Make the screen blank
+        cmd.run('/opt/vc/bin/tvservice -p');
+    }, 10000)
 });
 
 udpPort.on("message", function (oscMessage) {
