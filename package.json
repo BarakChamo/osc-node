@@ -5,6 +5,9 @@
     "description": "Video player controlled by OSC for the Raspberry Pi in Node.js.",
     "author": "Tom Janssens",
     "homepage": "http://tom.janssens.me/",
+    "scripts": {
+        "start":"node --no-expose-wasm app.js"
+    },
     "repository": {
         "type": "git",
         "url": "git://github.com/marsvaardig/osc-node.git"
