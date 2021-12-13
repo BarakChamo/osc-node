@@ -10,10 +10,8 @@
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/marsvaardig/osc-node.git"
+        "url": "git://github.com/barakchamo/osc-node.git"
     },
-    "readmeFilename": "README.md",
-    "bugs": "https://github.com/marsvaardig/osc-node/issues",
     "license": "MIT",
     "keywords": [
         "Open Sound Control",
