@@ -1,27 +1,3 @@
-#!/bin/bash
-
-## Install AFP
-
-sudo apt-get install -y netatalk
-
-### Replace afp.conf
-
-sudo rm -f /etc/netatalk/afp.conf
-sudo mv afp.conf-dist /etc/netatalk/afp.conf
-
-### Create a dedicated AFP directory
-
-mkdir ../videos
-
-## Install Node.js & NPM
-
-curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
-sudo apt-get install -y nodejs
-
-## Install dependencies
-
-sudo apt-get install -y omxplayer
-
 ## Make Node.js service
 
 sudo npm install forever -g
