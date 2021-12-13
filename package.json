@@ -6,7 +6,8 @@
     "author": "Tom Janssens",
     "homepage": "http://tom.janssens.me/",
     "scripts": {
-        "start":"node --no-expose-wasm app.js"
+        "start":"node --no-expose-wasm app.js",
+        "monitor": "sudo tcpdump -i wlan0 -n udp port 57121"
     },
     "repository": {
         "type": "git",
