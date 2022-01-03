@@ -7,6 +7,8 @@ var osc = require("osc"),
  * OSC Over UDP *
  ****************/
 
+const LOOP_DELAY = 0
+
 var getIPAddresses = function () {
     var os = require("os"),
         interfaces = os.networkInterfaces(),
@@ -51,7 +53,7 @@ udpPort.on("message", function (oscMessage) {
     }
 
     if(oscMessage.address == '/loop') {
-        omxplayer.newSource(oscMessage.args[0], 'hdmi', true, 100);
+        setTimeout(() => omxplayer.newSource(oscMessage.args[0], 'hdmi', true, 100);,LOOP_DELAY)
     }
 
     if(oscMessage.address == '/pause' && omxplayer.running) {
